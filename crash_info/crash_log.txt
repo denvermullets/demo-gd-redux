@@ -1,0 +1,717 @@
+-------------------------------------
+Translated Report (Full Report Below)
+-------------------------------------
+
+Process:               Godot [1849]
+Path:                  /Applications/Godot.app/Contents/MacOS/Godot
+Identifier:            org.godotengine.godot
+Version:               4.0 (4.0)
+Code Type:             X86-64 (Native)
+Parent Process:        launchd [1]
+User ID:               501
+
+Date/Time:             2023-02-07 09:08:43.6007 -0500
+OS Version:            macOS 13.2 (22D49)
+Report Version:        12
+Bridge OS Version:     7.2 (20P3045)
+Anonymous UUID:        065CF35E-99B1-0010-FEE7-A6832D7D3927
+
+Sleep/Wake UUID:       ABCFC010-663A-4AC9-A4CF-542431EF8D10
+
+Time Awake Since Boot: 110000 seconds
+Time Since Wake:       2978 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_BAD_ACCESS (SIGABRT)
+Exception Codes:       KERN_INVALID_ADDRESS at 0x0000000000000250
+Exception Codes:       0x0000000000000001, 0x0000000000000250
+
+VM Region Info: 0x250 is not in any region.  Bytes before following region: 140737487154608
+      REGION TYPE                    START - END         [ VSIZE] PRT/MAX SHRMOD  REGION DETAIL
+      UNUSED SPACE AT START
+--->  
+      shared memory            7fffffedb000-7fffffedc000 [    4K] r-x/r-x SM=SHM  
+
+Application Specific Information:
+abort() called
+
+
+Thread 0 Crashed::  Dispatch queue: com.apple.main-thread
+0   libsystem_kernel.dylib        	    0x7ff81557822a __pthread_kill + 10
+1   libsystem_pthread.dylib       	    0x7ff8155aff7b pthread_kill + 263
+2   libsystem_c.dylib             	    0x7ff8154f9ca5 abort + 123
+3   Godot                         	       0x104a51e7d 0x1045e2000 + 4652669
+4   libsystem_platform.dylib      	    0x7ff8155dac1d _sigtramp + 29
+5   ???                           	               0x0 ???
+6   Godot                         	       0x1067f70c3 0x1045e2000 + 35737795
+7   Godot                         	       0x108cfefde 0x1045e2000 + 74567646
+8   Godot                         	       0x106f81fb8 0x1045e2000 + 43646904
+9   Godot                         	       0x106f8238e 0x1045e2000 + 43647886
+10  Godot                         	       0x106f835fc 0x1045e2000 + 43652604
+11  Godot                         	       0x106f82d53 0x1045e2000 + 43650387
+12  Godot                         	       0x106f88ae2 0x1045e2000 + 43674338
+13  Godot                         	       0x106d1c2ec 0x1045e2000 + 41132780
+14  Godot                         	       0x106c23199 0x1045e2000 + 40112537
+15  Godot                         	       0x106c24017 0x1045e2000 + 40116247
+16  Godot                         	       0x106c2af55 0x1045e2000 + 40144725
+17  Godot                         	       0x106c63805 0x1045e2000 + 40376325
+18  Godot                         	       0x106c7fdd5 0x1045e2000 + 40492501
+19  Godot                         	       0x104a551dd 0x1045e2000 + 4665821
+20  Godot                         	       0x1088d6791 0x1045e2000 + 70207377
+21  Godot                         	       0x1088d36a2 0x1045e2000 + 70194850
+22  Godot                         	       0x104a68ed1 0x1045e2000 + 4746961
+23  Godot                         	       0x104a4eaa2 0x1045e2000 + 4639394
+24  Godot                         	       0x104a7ad9d 0x1045e2000 + 4820381
+25  dyld                          	    0x7ff81527d310 start + 2432
+
+Thread 1:
+0   libsystem_pthread.dylib       	    0x7ff8155abc58 start_wqthread + 0
+
+Thread 2:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x10881a9eb _IP_ResolverPrivate::_thread_function(void*) + 139
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 3:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 4:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 5:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 6:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 7:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 8:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 9:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 10:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 11:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 12:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 13:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 14:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 15:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 16:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 17:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 18:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x108d4ff4b 0x1045e2000 + 74899275
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 19:: AXSpeech
+0   libsystem_kernel.dylib        	    0x7ff8155715c2 mach_msg2_trap + 10
+1   libsystem_kernel.dylib        	    0x7ff81557f604 mach_msg2_internal + 82
+2   libsystem_kernel.dylib        	    0x7ff815578635 mach_msg_overwrite + 723
+3   libsystem_kernel.dylib        	    0x7ff8155718a8 mach_msg + 19
+4   CoreFoundation                	    0x7ff81568bcbe __CFRunLoopServiceMachPort + 145
+5   CoreFoundation                	    0x7ff81568a72a __CFRunLoopRun + 1360
+6   CoreFoundation                	    0x7ff815689b60 CFRunLoopRunSpecific + 560
+7   Foundation                    	    0x7ff8164e602a -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 216
+8   libAXSpeechManager.dylib      	    0x7ffb331e0c4d -[AXSpeechThread main] + 557
+9   Foundation                    	    0x7ff8164df3bc __NSThread__start__ + 1009
+10  libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+11  libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 20:: caulk.messenger.shared:17
+0   libsystem_kernel.dylib        	    0x7ff81557153e semaphore_wait_trap + 10
+1   caulk                         	    0x7ff81ed238f8 caulk::mach::semaphore::wait_or_error() + 16
+2   caulk                         	    0x7ff81ed09664 caulk::concurrent::details::worker_thread::run() + 36
+3   caulk                         	    0x7ff81ed09328 void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, void (caulk::concurrent::details::worker_thread::*)(), std::__1::tuple<caulk::concurrent::details::worker_thread*> > >(void*) + 41
+4   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+5   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 21:: com.apple.audio.IOThread.client
+0   libsystem_kernel.dylib        	    0x7ff8155715c2 mach_msg2_trap + 10
+1   libsystem_kernel.dylib        	    0x7ff81557f604 mach_msg2_internal + 82
+2   libsystem_kernel.dylib        	    0x7ff815578635 mach_msg_overwrite + 723
+3   libsystem_kernel.dylib        	    0x7ff8155718a8 mach_msg + 19
+4   CoreAudio                     	    0x7ff8178d338d HALB_MachPort::SendSimpleMessageWithSimpleReply(unsigned int, unsigned int, int, int&, bool, unsigned int) + 111
+5   CoreAudio                     	    0x7ff8177a65be HALC_ProxyIOContext::IOWorkLoop() + 4058
+6   CoreAudio                     	    0x7ff8177a4fe4 invocation function for block in HALC_ProxyIOContext::HALC_ProxyIOContext(unsigned int, unsigned int) + 80
+7   CoreAudio                     	    0x7ff817933aa4 HALB_IOThread::Entry(void*) + 72
+8   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+9   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 22:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x10553e53b 0x1045e2000 + 16106811
+4   Godot                         	       0x10553e3c2 0x1045e2000 + 16106434
+5   Godot                         	       0x10553e2e5 0x1045e2000 + 16106213
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 23:
+0   libsystem_kernel.dylib        	    0x7ff815573fea __semwait_signal + 10
+1   libsystem_c.dylib             	    0x7ff815488a9a nanosleep + 196
+2   Godot                         	       0x1058ba25b 0x1045e2000 + 19759707
+3   Godot                         	       0x105a28002 0x1045e2000 + 21258242
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 24:
+0   libsystem_kernel.dylib        	    0x7ff815573fea __semwait_signal + 10
+1   libsystem_c.dylib             	    0x7ff815488a9a nanosleep + 196
+2   Godot                         	       0x1058ba25b 0x1045e2000 + 19759707
+3   Godot                         	       0x105a93d56 EditorExportPlatformIOS::_check_for_changes_poll_thread(void*) + 518
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 25:
+0   libsystem_kernel.dylib        	    0x7ff815573fea __semwait_signal + 10
+1   libsystem_c.dylib             	    0x7ff815488a9a nanosleep + 196
+2   Godot                         	       0x1058ba25b 0x1045e2000 + 19759707
+3   Godot                         	       0x105b403a6 0x1045e2000 + 22406054
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 26:
+0   libsystem_kernel.dylib        	    0x7ff815573fea __semwait_signal + 10
+1   libsystem_c.dylib             	    0x7ff815488a9a nanosleep + 196
+2   Godot                         	       0x1058ba25b 0x1045e2000 + 19759707
+3   Godot                         	       0x106303b79 0x1045e2000 + 30546809
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 27:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x106ab09db 0x1045e2000 + 38595035
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 28:: com.apple.NSEventThread
+0   libsystem_kernel.dylib        	    0x7ff8155715c2 mach_msg2_trap + 10
+1   libsystem_kernel.dylib        	    0x7ff81557f604 mach_msg2_internal + 82
+2   libsystem_kernel.dylib        	    0x7ff815578635 mach_msg_overwrite + 723
+3   libsystem_kernel.dylib        	    0x7ff8155718a8 mach_msg + 19
+4   CoreFoundation                	    0x7ff81568bcbe __CFRunLoopServiceMachPort + 145
+5   CoreFoundation                	    0x7ff81568a72a __CFRunLoopRun + 1360
+6   CoreFoundation                	    0x7ff815689b60 CFRunLoopRunSpecific + 560
+7   AppKit                        	    0x7ff81893b129 _NSEventThread + 132
+8   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+9   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 29:
+0   libsystem_kernel.dylib        	    0x7ff81557411a __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff8155b07e1 _pthread_cond_wait + 1243
+2   libc++.1.dylib                	    0x7ff81550cc32 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   Godot                         	       0x105f5a10b 0x1045e2000 + 26706187
+4   Godot                         	       0x1086e7699 0x1045e2000 + 68179609
+5   Godot                         	       0x1086e7bcc 0x1045e2000 + 68180940
+6   libsystem_pthread.dylib       	    0x7ff8155b0259 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff8155abc7b thread_start + 15
+
+Thread 30:
+0   libsystem_pthread.dylib       	    0x7ff8155abc58 start_wqthread + 0
+
+
+Thread 0 crashed with X86 Thread State (64-bit):
+  rax: 0x0000000000000000  rbx: 0x00007ff858eed640  rcx: 0x00007ff7bb918108  rdx: 0x0000000000000000
+  rdi: 0x0000000000000103  rsi: 0x0000000000000006  rbp: 0x00007ff7bb918130  rsp: 0x00007ff7bb918108
+   r8: 0x000000010b61fd90   r9: 0x0000000000000000  r10: 0x0000000000000000  r11: 0x0000000000000246
+  r12: 0x0000000000000103  r13: 0x00007fd44485a7e0  r14: 0x0000000000000006  r15: 0x0000000000000016
+  rip: 0x00007ff81557822a  rfl: 0x0000000000000246  cr2: 0x0000600000670010
+  
+Logical CPU:     0
+Error Code:      0x02000148 
+Trap Number:     133
+
+Thread 0 instruction stream:
+  89 c7 e8 ae 5f 27 fd 48-89 c3 48 8d bd 60 ff ff  ...._'.H..H..`..
+  ff e8 7f 51 00 00 eb 03-48 89 c3 48 8d 7d a8 e8  ...Q....H..H.}..
+  11 00 00 00 48 89 df e8-65 cc 7f 01 66 0f 1f 84  ....H...e...f...
+  00 00 00 00 00 55 48 89-e5 48 8b 77 18 48 83 c7  .....UH..H.w.H..
+  18 e8 cf 48 00 00 5d c3-48 89 c7 e8 65 5f 27 fd  ...H..].H...e_'.
+  0f 1f 44 00 00 55 48 89-e5 41 57 41 56 41 54 53  ..D..UH..AWAVATS
+ [4c]8b 87 50 02 00 00 45-31 db 4d 85 c0 74 58 8b  L..P...E1.M..tX.	<==
+  87 70 02 00 00 48 8d 0d-79 52 0c 03 48 8d 15 f2  .p...H..yR..H...
+  52 0c 03 4c 8b 0e 4d 85-c9 74 04 45 8b 59 20 44  R..L..M..t.E.Y D
+  8b 14 81 4c 8b 24 c2 44-8b b7 48 02 00 00 45 39  ...L.$.D..H...E9
+  f3 0f 84 88 00 00 00 44-89 d8 49 0f af c4 44 89  .......D..I...D.
+  d3 48 f7 e3 4c 8b bf 58-02 00 00 41 8b 0c 97 44  .H..L..X...A...D
+
+Binary Images:
+    0x7ff815570000 -     0x7ff8155a9ff7 libsystem_kernel.dylib (*) <ca136b67-0559-3f19-8b7e-9b80438090b6> /usr/lib/system/libsystem_kernel.dylib
+    0x7ff8155aa000 -     0x7ff8155b5ff7 libsystem_pthread.dylib (*) <3bd433d4-15bd-3add-a612-95e4d3b20719> /usr/lib/system/libsystem_pthread.dylib
+    0x7ff815478000 -     0x7ff815500fff libsystem_c.dylib (*) <1aec5d1a-6e43-30f9-a9f2-11eb85d3e70c> /usr/lib/system/libsystem_c.dylib
+       0x1045e2000 -        0x10ae21fff org.godotengine.godot (4.0) <17a7ff72-9dc7-3452-9dbf-412351f70ea4> /Applications/Godot.app/Contents/MacOS/Godot
+    0x7ff8155d7000 -     0x7ff8155e0ff7 libsystem_platform.dylib (*) <04645919-7592-3a26-93b5-95663f983856> /usr/lib/system/libsystem_platform.dylib
+               0x0 - 0xffffffffffffffff ??? (*) <00000000-0000-0000-0000-000000000000> ???
+    0x7ff815277000 -     0x7ff81530bcaf dyld (*) <270c4224-a38f-3a22-9ba9-95968f487738> /usr/lib/dyld
+    0x7ff815501000 -     0x7ff815559ff3 libc++.1.dylib (*) <b8339fb2-cbae-3d84-b080-bd19ddb2981c> /usr/lib/libc++.1.dylib
+    0x7ff81560c000 -     0x7ff815aa5fef com.apple.CoreFoundation (6.9) <c2615780-0140-315c-a455-7e03bb22d3d6> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+    0x7ff816487000 -     0x7ff816e98ff6 com.apple.Foundation (6.9) <a58576df-7109-3a13-a338-617f135ce8a8> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+    0x7ffb331cd000 -     0x7ffb331e5ff6 libAXSpeechManager.dylib (*) <a8a8bc78-6ea7-3d66-b20d-6c80b3b198a2> /usr/lib/libAXSpeechManager.dylib
+    0x7ff81ed07000 -     0x7ff81ed2cfff com.apple.audio.caulk (1.0) <bf7582bd-4de0-3ca2-8b69-f1944725f182> /System/Library/PrivateFrameworks/caulk.framework/Versions/A/caulk
+    0x7ff8175c3000 -     0x7ff817ce1ff5 com.apple.audio.CoreAudio (5.0) <3b6e93dd-f8c6-338c-9251-5e750e091dd3> /System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio
+    0x7ff81879c000 -     0x7ff8197a4ff2 com.apple.AppKit (6.9) <480a5693-f3e3-3b50-a1f3-169d12a12a0e> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=690.6M resident=0K(0%) swapped_out_or_unallocated=690.6M(100%)
+Writable regions: Total=3.0G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=3.0G(100%)
+
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Accelerate framework               256K        2 
+Activity Tracing                   256K        1 
+CG backing stores                 4512K        8 
+CG image                          1104K       14 
+ColorSync                          228K       26 
+CoreAnimation                       48K        9 
+CoreGraphics                        16K        3 
+CoreUI image data                  412K        5 
+Foundation                          16K        1 
+Foundation (reserved)                4K        1         reserved VM address space (unallocated)
+Kernel Alloc Once                    8K        1 
+MALLOC                             1.8G      182 
+MALLOC guard page                   48K       10 
+MALLOC_LARGE (reserved)              4K        1         reserved VM address space (unallocated)
+MALLOC_MEDIUM (reserved)           1.2G       11         reserved VM address space (unallocated)
+STACK GUARD                       56.1M       31 
+Stack                             23.2M       31 
+VM_ALLOCATE                        188K       23 
+VM_ALLOCATE (reserved)               8K        1         reserved VM address space (unallocated)
+__CTF                               756        1 
+__DATA                            30.2M      464 
+__DATA_CONST                      25.5M      300 
+__DATA_DIRTY                      1221K      158 
+__FONT_DATA                        2352        1 
+__LINKEDIT                       189.6M       11 
+__OBJC_RO                         65.5M        1 
+__OBJC_RW                         1989K        2 
+__TEXT                           501.0M      486 
+dyld private memory               1280K        3 
+mapped file                      184.3M       27 
+shared memory                      808K       24 
+===========                     =======  ======= 
+TOTAL                              4.0G     1839 
+TOTAL, minus reserved VM space     2.9G     1839 
+
+
+
+-----------
+Full Report
+-----------
+
+{"app_name":"Godot","timestamp":"2023-02-07 09:08:43.00 -0500","app_version":"4.0","slice_uuid":"17a7ff72-9dc7-3452-9dbf-412351f70ea4","build_version":"4.0","platform":1,"bundleID":"org.godotengine.godot","share_with_app_devs":0,"is_first_party":0,"bug_type":"309","os_version":"macOS 13.2 (22D49)","roots_installed":0,"name":"Godot","incident_id":"742BFB7A-1205-4F9A-BA87-F3D06A621365"}
+{
+  "uptime" : 110000,
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "MacBookPro16,1",
+  "coalitionID" : 12578,
+  "osVersion" : {
+    "train" : "macOS 13.2",
+    "build" : "22D49",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2023-02-07 09:08:43.6007 -0500",
+  "incident" : "742BFB7A-1205-4F9A-BA87-F3D06A621365",
+  "pid" : 1849,
+  "cpuType" : "X86-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2023-02-07 09:08:04.7780 -0500",
+  "procStartAbsTime" : 113655877337572,
+  "procExitAbsTime" : 113694697975576,
+  "procName" : "Godot",
+  "procPath" : "\/Applications\/Godot.app\/Contents\/MacOS\/Godot",
+  "bundleInfo" : {"CFBundleShortVersionString":"4.0","CFBundleVersion":"4.0","CFBundleIdentifier":"org.godotengine.godot"},
+  "storeInfo" : {"deviceIdentifierForVendor":"B8B6D631-83F6-5AF1-9F01-4B9E3BE28D34","thirdParty":true},
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "org.godotengine.godot",
+  "crashReporterKey" : "065CF35E-99B1-0010-FEE7-A6832D7D3927",
+  "throttleTimeout" : 2147483647,
+  "wakeTime" : 2978,
+  "bridgeVersion" : {"build":"20P3045","train":"7.2"},
+  "sleepWakeUUID" : "ABCFC010-663A-4AC9-A4CF-542431EF8D10",
+  "sip" : "enabled",
+  "vmRegionInfo" : "0x250 is not in any region.  Bytes before following region: 140737487154608\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      UNUSED SPACE AT START\n--->  \n      shared memory            7fffffedb000-7fffffedc000 [    4K] r-x\/r-x SM=SHM  ",
+  "exception" : {"codes":"0x0000000000000001, 0x0000000000000250","rawCodes":[1,592],"type":"EXC_BAD_ACCESS","signal":"SIGABRT","subtype":"KERN_INVALID_ADDRESS at 0x0000000000000250"},
+  "vmregioninfo" : "0x250 is not in any region.  Bytes before following region: 140737487154608\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      UNUSED SPACE AT START\n--->  \n      shared memory            7fffffedb000-7fffffedc000 [    4K] r-x\/r-x SM=SHM  ",
+  "asi" : {"libsystem_c.dylib":["abort() called"]},
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":1496424,"instructionState":{"instructionStream":{"bytes":[137,199,232,174,95,39,253,72,137,195,72,141,189,96,255,255,255,232,127,81,0,0,235,3,72,137,195,72,141,125,168,232,17,0,0,0,72,137,223,232,101,204,127,1,102,15,31,132,0,0,0,0,0,85,72,137,229,72,139,119,24,72,131,199,24,232,207,72,0,0,93,195,72,137,199,232,101,95,39,253,15,31,68,0,0,85,72,137,229,65,87,65,86,65,84,83,76,139,135,80,2,0,0,69,49,219,77,133,192,116,88,139,135,112,2,0,0,72,141,13,121,82,12,3,72,141,21,242,82,12,3,76,139,14,77,133,201,116,4,69,139,89,32,68,139,20,129,76,139,36,194,68,139,183,72,2,0,0,69,57,243,15,132,136,0,0,0,68,137,216,73,15,175,196,68,137,211,72,247,227,76,139,191,88,2,0,0,65,139,12,151,68],"offset":96}},"threadState":{"r13":{"value":140549659404256},"rax":{"value":0},"rflags":{"value":582},"cpu":{"value":0},"r14":{"value":6},"rsi":{"value":6},"r8":{"value":4485938576},"cr2":{"value":105553123016720},"rdx":{"value":0},"r10":{"value":0},"r9":{"value":0},"r15":{"value":22},"rbx":{"value":140704620664384,"symbolLocation":0,"symbol":"_main_thread"},"trap":{"value":133},"err":{"value":33554760},"r11":{"value":582},"rip":{"value":140703486673450,"matchesCrashFrame":1},"rbp":{"value":140701980524848},"rsp":{"value":140701980524808},"r12":{"value":259},"rcx":{"value":140701980524808},"flavor":"x86_THREAD_STATE","rdi":{"value":259}},"queue":"com.apple.main-thread","frames":[{"imageOffset":33322,"symbol":"__pthread_kill","symbolLocation":10,"imageIndex":0},{"imageOffset":24443,"symbol":"pthread_kill","symbolLocation":263,"imageIndex":1},{"imageOffset":531621,"symbol":"abort","symbolLocation":123,"imageIndex":2},{"imageOffset":4652669,"imageIndex":3},{"imageOffset":15389,"symbol":"_sigtramp","symbolLocation":29,"imageIndex":4},{"imageOffset":0,"imageIndex":5},{"imageOffset":35737795,"imageIndex":3},{"imageOffset":74567646,"imageIndex":3},{"imageOffset":43646904,"imageIndex":3},{"imageOffset":43647886,"imageIndex":3},{"imageOffset":43652604,"imageIndex":3},{"imageOffset":43650387,"imageIndex":3},{"imageOffset":43674338,"imageIndex":3},{"imageOffset":41132780,"imageIndex":3},{"imageOffset":40112537,"imageIndex":3},{"imageOffset":40116247,"imageIndex":3},{"imageOffset":40144725,"imageIndex":3},{"imageOffset":40376325,"imageIndex":3},{"imageOffset":40492501,"imageIndex":3},{"imageOffset":4665821,"imageIndex":3},{"imageOffset":70207377,"imageIndex":3},{"imageOffset":70194850,"imageIndex":3},{"imageOffset":4746961,"imageIndex":3},{"imageOffset":4639394,"imageIndex":3},{"imageOffset":4820381,"imageIndex":3},{"imageOffset":25360,"symbol":"start","symbolLocation":2432,"imageIndex":6}]},{"id":1496432,"frames":[{"imageOffset":7256,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":1}]},{"id":1496447,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":69437931,"symbol":"_IP_ResolverPrivate::_thread_function(void*)","symbolLocation":139,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496448,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496449,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496450,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496451,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496452,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496453,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496454,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496455,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496456,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496457,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496458,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496459,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496460,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496461,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496462,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496463,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":74899275,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496464,"name":"AXSpeech","frames":[{"imageOffset":5570,"symbol":"mach_msg2_trap","symbolLocation":10,"imageIndex":0},{"imageOffset":62980,"symbol":"mach_msg2_internal","symbolLocation":82,"imageIndex":0},{"imageOffset":34357,"symbol":"mach_msg_overwrite","symbolLocation":723,"imageIndex":0},{"imageOffset":6312,"symbol":"mach_msg","symbolLocation":19,"imageIndex":0},{"imageOffset":523454,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":145,"imageIndex":8},{"imageOffset":517930,"symbol":"__CFRunLoopRun","symbolLocation":1360,"imageIndex":8},{"imageOffset":514912,"symbol":"CFRunLoopRunSpecific","symbolLocation":560,"imageIndex":8},{"imageOffset":389162,"symbol":"-[NSRunLoop(NSRunLoop) runMode:beforeDate:]","symbolLocation":216,"imageIndex":9},{"imageOffset":80973,"symbol":"-[AXSpeechThread main]","symbolLocation":557,"imageIndex":10},{"imageOffset":361404,"symbol":"__NSThread__start__","symbolLocation":1009,"imageIndex":9},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496469,"name":"caulk.messenger.shared:17","frames":[{"imageOffset":5438,"symbol":"semaphore_wait_trap","symbolLocation":10,"imageIndex":0},{"imageOffset":116984,"symbol":"caulk::mach::semaphore::wait_or_error()","symbolLocation":16,"imageIndex":11},{"imageOffset":9828,"symbol":"caulk::concurrent::details::worker_thread::run()","symbolLocation":36,"imageIndex":11},{"imageOffset":9000,"symbol":"void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, void (caulk::concurrent::details::worker_thread::*)(), std::__1::tuple<caulk::concurrent::details::worker_thread*> > >(void*)","symbolLocation":41,"imageIndex":11},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496478,"name":"com.apple.audio.IOThread.client","frames":[{"imageOffset":5570,"symbol":"mach_msg2_trap","symbolLocation":10,"imageIndex":0},{"imageOffset":62980,"symbol":"mach_msg2_internal","symbolLocation":82,"imageIndex":0},{"imageOffset":34357,"symbol":"mach_msg_overwrite","symbolLocation":723,"imageIndex":0},{"imageOffset":6312,"symbol":"mach_msg","symbolLocation":19,"imageIndex":0},{"imageOffset":3212173,"symbol":"HALB_MachPort::SendSimpleMessageWithSimpleReply(unsigned int, unsigned int, int, int&, bool, unsigned int)","symbolLocation":111,"imageIndex":12},{"imageOffset":1979838,"symbol":"HALC_ProxyIOContext::IOWorkLoop()","symbolLocation":4058,"imageIndex":12},{"imageOffset":1974244,"symbol":"invocation function for block in HALC_ProxyIOContext::HALC_ProxyIOContext(unsigned int, unsigned int)","symbolLocation":80,"imageIndex":12},{"imageOffset":3607204,"symbol":"HALB_IOThread::Entry(void*)","symbolLocation":72,"imageIndex":12},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496480,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":16106811,"imageIndex":3},{"imageOffset":16106434,"imageIndex":3},{"imageOffset":16106213,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496487,"frames":[{"imageOffset":16362,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":0},{"imageOffset":68250,"symbol":"nanosleep","symbolLocation":196,"imageIndex":2},{"imageOffset":19759707,"imageIndex":3},{"imageOffset":21258242,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496488,"frames":[{"imageOffset":16362,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":0},{"imageOffset":68250,"symbol":"nanosleep","symbolLocation":196,"imageIndex":2},{"imageOffset":19759707,"imageIndex":3},{"imageOffset":21699926,"symbol":"EditorExportPlatformIOS::_check_for_changes_poll_thread(void*)","symbolLocation":518,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496489,"frames":[{"imageOffset":16362,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":0},{"imageOffset":68250,"symbol":"nanosleep","symbolLocation":196,"imageIndex":2},{"imageOffset":19759707,"imageIndex":3},{"imageOffset":22406054,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496494,"frames":[{"imageOffset":16362,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":0},{"imageOffset":68250,"symbol":"nanosleep","symbolLocation":196,"imageIndex":2},{"imageOffset":19759707,"imageIndex":3},{"imageOffset":30546809,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496506,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":38595035,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496530,"name":"com.apple.NSEventThread","frames":[{"imageOffset":5570,"symbol":"mach_msg2_trap","symbolLocation":10,"imageIndex":0},{"imageOffset":62980,"symbol":"mach_msg2_internal","symbolLocation":82,"imageIndex":0},{"imageOffset":34357,"symbol":"mach_msg_overwrite","symbolLocation":723,"imageIndex":0},{"imageOffset":6312,"symbol":"mach_msg","symbolLocation":19,"imageIndex":0},{"imageOffset":523454,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":145,"imageIndex":8},{"imageOffset":517930,"symbol":"__CFRunLoopRun","symbolLocation":1360,"imageIndex":8},{"imageOffset":514912,"symbol":"CFRunLoopRunSpecific","symbolLocation":560,"imageIndex":8},{"imageOffset":1700137,"symbol":"_NSEventThread","symbolLocation":132,"imageIndex":13},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496536,"frames":[{"imageOffset":16666,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":0},{"imageOffset":26593,"symbol":"_pthread_cond_wait","symbolLocation":1243,"imageIndex":1},{"imageOffset":48178,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":7},{"imageOffset":26706187,"imageIndex":3},{"imageOffset":68179609,"imageIndex":3},{"imageOffset":68180940,"imageIndex":3},{"imageOffset":25177,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":1},{"imageOffset":7291,"symbol":"thread_start","symbolLocation":15,"imageIndex":1}]},{"id":1496676,"frames":[{"imageOffset":7256,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":1}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703486640128,
+    "size" : 237560,
+    "uuid" : "ca136b67-0559-3f19-8b7e-9b80438090b6",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703486877696,
+    "size" : 49144,
+    "uuid" : "3bd433d4-15bd-3add-a612-95e4d3b20719",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703485624320,
+    "size" : 561152,
+    "uuid" : "1aec5d1a-6e43-30f9-a9f2-11eb85d3e70c",
+    "path" : "\/usr\/lib\/system\/libsystem_c.dylib",
+    "name" : "libsystem_c.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4368244736,
+    "CFBundleShortVersionString" : "4.0",
+    "CFBundleIdentifier" : "org.godotengine.godot",
+    "size" : 109314048,
+    "uuid" : "17a7ff72-9dc7-3452-9dbf-412351f70ea4",
+    "path" : "\/Applications\/Godot.app\/Contents\/MacOS\/Godot",
+    "name" : "Godot",
+    "CFBundleVersion" : "4.0"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703487062016,
+    "size" : 40952,
+    "uuid" : "04645919-7592-3a26-93b5-95663f983856",
+    "path" : "\/usr\/lib\/system\/libsystem_platform.dylib",
+    "name" : "libsystem_platform.dylib"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703483523072,
+    "size" : 609456,
+    "uuid" : "270c4224-a38f-3a22-9ba9-95968f487738",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703486185472,
+    "size" : 364532,
+    "uuid" : "b8339fb2-cbae-3d84-b080-bd19ddb2981c",
+    "path" : "\/usr\/lib\/libc++.1.dylib",
+    "name" : "libc++.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64h",
+    "base" : 140703487279104,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 4825072,
+    "uuid" : "c2615780-0140-315c-a455-7e03bb22d3d6",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "1953.300"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703502462976,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.Foundation",
+    "size" : 10559479,
+    "uuid" : "a58576df-7109-3a13-a338-617f135ce8a8",
+    "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Versions\/C\/Foundation",
+    "name" : "Foundation",
+    "CFBundleVersion" : "1953.300"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140716871045120,
+    "size" : 102391,
+    "uuid" : "a8a8bc78-6ea7-3d66-b20d-6c80b3b198a2",
+    "path" : "\/usr\/lib\/libAXSpeechManager.dylib",
+    "name" : "libAXSpeechManager.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703645593600,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.audio.caulk",
+    "size" : 155648,
+    "uuid" : "bf7582bd-4de0-3ca2-8b69-f1944725f182",
+    "path" : "\/System\/Library\/PrivateFrameworks\/caulk.framework\/Versions\/A\/caulk",
+    "name" : "caulk"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703520534528,
+    "CFBundleShortVersionString" : "5.0",
+    "CFBundleIdentifier" : "com.apple.audio.CoreAudio",
+    "size" : 7466998,
+    "uuid" : "3b6e93dd-f8c6-338c-9251-5e750e091dd3",
+    "path" : "\/System\/Library\/Frameworks\/CoreAudio.framework\/Versions\/A\/CoreAudio",
+    "name" : "CoreAudio",
+    "CFBundleVersion" : "5.0"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703539249152,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.AppKit",
+    "size" : 16814067,
+    "uuid" : "480a5693-f3e3-3b50-a1f3-169d12a12a0e",
+    "path" : "\/System\/Library\/Frameworks\/AppKit.framework\/Versions\/C\/AppKit",
+    "name" : "AppKit",
+    "CFBundleVersion" : "2299.40.116"
+  }
+],
+  "sharedCache" : {
+  "base" : 140703482916864,
+  "size" : 21474836480,
+  "uuid" : "61138b36-7859-3add-9c47-7e7cd2a358d0"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=690.6M resident=0K(0%) swapped_out_or_unallocated=690.6M(100%)\nWritable regions: Total=3.0G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=3.0G(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nAccelerate framework               256K        2 \nActivity Tracing                   256K        1 \nCG backing stores                 4512K        8 \nCG image                          1104K       14 \nColorSync                          228K       26 \nCoreAnimation                       48K        9 \nCoreGraphics                        16K        3 \nCoreUI image data                  412K        5 \nFoundation                          16K        1 \nFoundation (reserved)                4K        1         reserved VM address space (unallocated)\nKernel Alloc Once                    8K        1 \nMALLOC                             1.8G      182 \nMALLOC guard page                   48K       10 \nMALLOC_LARGE (reserved)              4K        1         reserved VM address space (unallocated)\nMALLOC_MEDIUM (reserved)           1.2G       11         reserved VM address space (unallocated)\nSTACK GUARD                       56.1M       31 \nStack                             23.2M       31 \nVM_ALLOCATE                        188K       23 \nVM_ALLOCATE (reserved)               8K        1         reserved VM address space (unallocated)\n__CTF                               756        1 \n__DATA                            30.2M      464 \n__DATA_CONST                      25.5M      300 \n__DATA_DIRTY                      1221K      158 \n__FONT_DATA                        2352        1 \n__LINKEDIT                       189.6M       11 \n__OBJC_RO                         65.5M        1 \n__OBJC_RW                         1989K        2 \n__TEXT                           501.0M      486 \ndyld private memory               1280K        3 \nmapped file                      184.3M       27 \nshared memory                      808K       24 \n===========                     =======  ======= \nTOTAL                              4.0G     1839 \nTOTAL, minus reserved VM space     2.9G     1839 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "63582c5f8a53461413999550",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000002
+    },
+    {
+      "rolloutId" : "61675b89201f677a9a4cbd65",
+      "factorPackIds" : {
+        "HEALTH_FEATURE_AVAILABILITY" : "638e768d75b0720ff1f8c4f3"
+      },
+      "deploymentId" : 240000051
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}
+
+Model: MacBookPro16,1, BootROM 1916.80.2.0.0 (iBridge: 20.16.3045.0.0,0), 8 processors, 8-Core Intel Core i9, 2.4 GHz, 32 GB, SMC 
+Graphics: Intel UHD Graphics 630, Intel UHD Graphics 630, Built-In
+Graphics: AMD Radeon Pro 5500M, AMD Radeon Pro 5500M, PCIe, 8 GB
+Display: Color LCD, 3072 x 1920 Retina, MirrorOff, Online
+Display: BenQ PD3200U, 3840 x 2160 (2160p/4K UHD 1 - Ultra High Definition), Main, MirrorOff, Online
+Memory Module: BANK 0/ChannelA-DIMM0, 16 GB, DDR4, 2667 MHz, Micron, MT40A2G8NEA-062E:J
+Memory Module: BANK 2/ChannelB-DIMM0, 16 GB, DDR4, 2667 MHz, Micron, MT40A2G8NEA-062E:J
+AirPort: spairport_wireless_card_type_wifi (0x14E4, 0x7BF), wl0: Dec  1 2022 17:36:56 version 9.30.489.6.32.5.85 FWID 01-23419ed2
+Bluetooth: Version (null), 0 services, 0 devices, 0 incoming serial ports
+Network Service: Wi-Fi, AirPort, en0
+USB Device: USB3.1 Hub
+USB Device: USB Storage
+USB Device: AX88179A
+USB Device: USB3.2 Hub
+USB Device: USB31Bus
+USB Device: USB2.0 Hub
+USB Device: Anker USB-C Hub Device
+USB Device: USB2.0 Hub
+USB Device: USB2.1 Hub
+USB Device: USB Receiver
+USB Device: HD Pro Webcam C920
+USB Device: USB Receiver
+USB Device: T2Bus
+USB Device: composite_device
+USB Device: Touch Bar Backlight
+USB Device: Touch Bar Display
+USB Device: Apple Internal Keyboard / Trackpad
+USB Device: Headset
+USB Device: Ambient Light Sensor
+USB Device: FaceTime HD Camera (Built-in)
+USB Device: Apple T2 Controller
+Thunderbolt Bus: MacBook Pro, Apple Inc., 63.5
+Thunderbolt Bus: MacBook Pro, Apple Inc., 63.5
